@@ -1,0 +1,5 @@
+package com.jsp.Spring.SpringProject_vehicles.service;
+
+public class VehicleService {
+
+}

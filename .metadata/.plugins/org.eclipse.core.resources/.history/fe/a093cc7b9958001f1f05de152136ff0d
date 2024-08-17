@@ -1,0 +1,13 @@
+package com.jsp.Spring.SpringProject_BookDB.repository;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class BookRepository 
+{
+	EntityManagerFactory em=Persistence.createEntityManagerFactory("");
+
+}

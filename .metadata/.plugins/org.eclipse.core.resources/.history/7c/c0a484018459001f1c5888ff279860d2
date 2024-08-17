@@ -1,0 +1,32 @@
+package com.jsp.Spring.SpringProject_BookDB.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.jsp.Spring.SpringProject_BookDB.entity.Book;
+import com.jsp.Spring.SpringProject_BookDB.service.BookService;
+
+@Controller
+public class BookController 
+{
+	@Autowired
+	private BookService bookService;
+
+	public String addBook()
+	{
+		return bookService.addBook();
+	}
+	
+	public Book findBookById()
+	{
+		return bookService.findBookById();
+	}
+	public Book deleteBook()
+	{
+		return bookService.deleteBookById();
+	}
+	public void deleteBookById()
+	{
+		bookService.deleteBookById();
+	}
+}

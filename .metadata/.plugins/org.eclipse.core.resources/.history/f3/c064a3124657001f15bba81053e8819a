@@ -1,0 +1,5 @@
+package com.jsp.Spring.Product.repository;
+
+public class ProductRepository {
+
+}

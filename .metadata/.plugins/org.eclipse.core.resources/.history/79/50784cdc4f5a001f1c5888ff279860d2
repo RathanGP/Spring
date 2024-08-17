@@ -1,0 +1,10 @@
+package com.jsp.Spring.SpringProject_vehicles;
+
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+       
+    }
+}

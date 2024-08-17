@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean id="employee1-bean"
+		class="com.jsp.spring.SpringProject_Employee.Employee" autowire="no">
+		<property name="employeeId" value="101"></property>
+		<property name="employeeName" value="Rathan"></property>
+		<property name="employeeEmail" value="rathan@gmail.com"></property>
+		<property name="employeeSal" value="400000"></property>
+		<property name="projects">
+			<list>
+				<ref bean="project1-bean" />
+				<ref bean="project2-bean" />
+				<ref bean="project3-bean" />
+				<ref bean="project4-bean" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="employee2-bean"
+		class="com.jsp.spring.SpringProject_Employee.Employee" autowire="no">
+		<property name="employeeId" value="102"></property>
+		<property name="employeeName" value="Ram"></property>
+		<property name="employeeEmail" value="ram@gmail.com"></property>
+		<property name="employeeSal" value="500000"></property>
+		<property name="projects">
+			<list>
+				<ref bean="project1-bean" />
+				<ref bean="project2-bean" />
+				<ref bean="project3-bean" />
+				<ref bean="project4-bean" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="employee3-bean"
+		class="com.jsp.spring.SpringProject_Employee.Employee" autowire="no">
+		<property name="employeeId" value="103"></property>
+		<property name="employeeName" value="Rohan"></property>
+		<property name="employeeEmail" value="rohan@gmail.com"></property>
+		<property name="employeeSal" value="600000"></property>
+		<property name="projects">
+			<list>
+				<ref bean="project1-bean" />
+				<ref bean="project2-bean" />
+				<ref bean="project3-bean" />
+				<ref bean="project4-bean" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="employee4-bean"
+		class="com.jsp.spring.SpringProject_Employee.Employee" autowire="no">
+		<property name="employeeId" value="104"></property>
+		<property name="employeeName" value="Nuthan"></property>
+		<property name="employeeEmail" value="nuthan@gmail.com"></property>
+		<property name="employeeSal" value="700000"></property>
+		<property name="projects">
+			<list>
+				<ref bean="project1-bean" />
+				<ref bean="project2-bean" />
+				<ref bean="project3-bean" />
+				<ref bean="project4-bean" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="project1-bean"
+		class="com.jsp.spring.SpringProject_Employee.Project"
+		autowire="byType">
+		<property name="projectId" value="1"></property>
+		<property name="projectName"
+			value="Cardiovascular prediction via Retina"></property>
+		<property name="techStack" value="Python"></property>
+	</bean>
+
+	<bean id="project2-bean"
+		class="com.jsp.spring.SpringProject_Employee.Project"
+		autowire="byType">
+		<property name="projectId" value="2"></property>
+		<property name="projectName"
+			value="Traffic offence management system"></property>
+		<property name="techStack" value="Java"></property>
+	</bean>
+
+	<bean id="project3-bean"
+		class="com.jsp.spring.SpringProject_Employee.Project"
+		autowire="byType">
+		<property name="projectId" value="3"></property>
+		<property name="projectName"
+			value="Virtual assistance for visually impaired"></property>
+		<property name="techStack" value="Machine Learning"></property>
+	</bean>
+
+	<bean id="project4-bean"
+		class="com.jsp.spring.SpringProject_Employee.Project"
+		autowire="byType">
+		<property name="projectId" value="4"></property>
+		<property name="projectName" value="Portfolio"></property>
+		<property name="techStack" value="Web technology"></property>
+	</bean>
+</beans>

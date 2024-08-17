@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="person-bean"
+		class="com.jsp.spring.SpringProject_IOC.Person">
+		<constructor-arg name="personId" value="101"></constructor-arg>
+		<constructor-arg name="personName" value="Rathan"></constructor-arg>
+		<constructor-arg name="address" ref="address-bean"></constructor-arg>
+
+	</bean>
+
+	<bean id="address-bean"
+		class="com.jsp.spring.SpringProject_IOC.Address">
+		<constructor-arg name="addressId" value="1"></constructor-arg>
+		<constructor-arg name="location" value="Btm"></constructor-arg>
+		<constructor-arg name="city" value="Bengaluru"></constructor-arg>
+
+	</bean>
+
+</beans>

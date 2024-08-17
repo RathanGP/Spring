@@ -1,0 +1,65 @@
+package com.jsp.Spring.SpringProject_BookDB.service;
+
+import java.util.Scanner;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+
+import com.jsp.Spring.SpringProject_BookDB.entity.Book;
+import com.jsp.Spring.SpringProject_BookDB.repository.BookRepository;
+
+@Service
+public class BookService
+{
+	@Autowired
+	private BookRepository bookRepository;
+	
+	Scanner sc=new Scanner(System.in);
+	
+
+	public String addBook()
+	{
+		Book book=new Book();
+		System.out.println("Enter the BookId");
+		book.setBookId(sc.nextInt());
+		System.out.println("Enter the BookName");
+		book.setBookName(sc.next());
+		System.out.println("Enter the BookGenre");
+		book.setGenre(sc.next());
+		System.out.println("Enter the BookAuthor");
+		book.setBookAuthor(sc.next());
+		System.out.println("Enter the BookPrice");
+		book.setBookPrice(sc.nextInt());
+		
+		bookRepository.addBook(book);
+		
+		return "Book added successfully";
+		
+	}
+	
+	public Book findBookById()
+	{
+		System.out.println("Enter the BookId");
+		Book bookById = bookRepository.findBookById(sc.nextInt());
+		return bookById;
+	}
+	public void updateBookPriceById()
+	{
+		System.out.println("Enter book ID");
+		Book bookId=bookRepository.findBookById(sc.nextInt());
+		System.out.println("Enter the book  price");
+		bookId.setBookPrice(sc.nextInt());
+		bookRepository.updateBook(bookId);
+		System.out.println("updated successfully");
+				
+	}
+	public void deleteBookById()
+	{
+		System.out.println("Enter the book id");
+		Book bookById = bookRepository.findBookById(sc.nextInt());
+		bookRepository.deleteBook(bookById);
+		System.out.println("deleted successfully");
+	}
+	
+}

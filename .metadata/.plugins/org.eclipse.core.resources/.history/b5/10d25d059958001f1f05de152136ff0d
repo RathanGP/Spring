@@ -1,0 +1,10 @@
+package com.jsp.Spring.SpringProject_BookDB;
+
+
+
+import com.jsp.Spring.SpringProject_BookDB.controller.BookController;
+
+public class AppConfig 
+{
+	
+}

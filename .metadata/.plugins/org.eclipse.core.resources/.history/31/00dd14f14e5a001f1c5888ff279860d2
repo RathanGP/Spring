@@ -1,0 +1,16 @@
+package com.jsp.Spring.SpringProject_vehicles.service;
+
+import org.springframework.stereotype.Service;
+
+import com.jsp.Spring.SpringProject_vehicles.entity.Vehicle;
+
+@Service
+public class VehicleService 
+{
+	public void addVehicle()
+	{
+		Vehicle vehicle=new Vehicle();
+		System.out.println("Enter the Vehicle Id");
+	}
+
+}

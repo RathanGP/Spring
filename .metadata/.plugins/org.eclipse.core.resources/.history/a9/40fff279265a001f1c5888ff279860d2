@@ -1,0 +1,5 @@
+package com.jsp.spring_mvc.demo;
+
+public class WebIntializer  {
+
+}

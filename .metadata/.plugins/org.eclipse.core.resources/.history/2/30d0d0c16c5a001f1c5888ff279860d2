@@ -1,0 +1,22 @@
+package com.jsp.springmvc.studentdb.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.jsp.springmvc.studentdb.entity.Student;
+import com.jsp.springmvc.studentdb.service.StudentService;
+
+@Controller
+public class StudentController
+{
+	@Autowired
+	private StudentService studentService;
+	
+	public ModelAndView addStudent(Student student)
+	{
+		return studentService.addStudent(student);
+		
+	}
+
+}

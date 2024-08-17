@@ -1,0 +1,25 @@
+package com.jsp.Spring.SpringProject_vehicles.repository;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class VehicleRepository
+{
+	public void addVehicle()
+	{
+		
+	}
+	public void findVehicle()
+	{
+		
+	}
+	public void updateVehicle()
+	{
+		
+	}
+	public void deleteVehicle()
+	{
+		
+	}
+
+}

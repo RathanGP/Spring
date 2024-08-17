@@ -1,0 +1,5 @@
+package com.jsp.Spring.Product.entity;
+
+public class Product {
+
+}

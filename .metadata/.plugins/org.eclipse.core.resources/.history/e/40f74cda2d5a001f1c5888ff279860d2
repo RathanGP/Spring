@@ -1,0 +1,5 @@
+package com.jsp.springmvc.studentdb;
+
+public class WebInitializer {
+
+}

@@ -1,0 +1,30 @@
+package com.jsp.Spring.SpringProject_vehicles.repository;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class VehicleRepository
+{
+	EntityManagerFactory emf=Persistence.createEntityManagerFactory();
+	
+	public void addVehicle()
+	{
+		
+	}
+	public void findVehicle()
+	{
+		
+	}
+	public void updateVehicle()
+	{
+		
+	}
+	public void deleteVehicle()
+	{
+		
+	}
+
+}

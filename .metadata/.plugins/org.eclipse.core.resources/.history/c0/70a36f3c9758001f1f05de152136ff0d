@@ -1,0 +1,5 @@
+package com.jsp.Spring.SpringProject_BookDB.entity;
+
+public class Book {
+
+}
